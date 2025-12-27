@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Mini Projects</title>
+    <link rel="stylesheet" href="js2mini.css">
+</head>
+<body>
+   
+
+    <!-- Mini Project 1: Voting Eligibility System -->
+    <section class="project">
+        <h2>1. Voting Eligibility System</h2>
+    </section>
+
+    <!-- Mini Project 2: Temperature Converter -->
+    <section class="project">
+        <h2>2. Temperature Converter (Weather App)</h2>
+    </section>
+
+    <!-- Mini Project 3: Discount Calculator -->
+    <section class="project">
+        <h2>3. Discount Calculator (E-Commerce Website)</h2>
+    </section>
+
+    <!-- Mini Project 4: Age Verification System -->
+    <section class="project">
+        <h2>4. Age Verification System (Signup Page)</h2>
+    </section>
+
+    <!-- Mini Project 5: Bill Splitter with Tip Calculator -->
+    <section class="project">
+        <h2>5. Bill Splitter with Tip Calculator</h2>
+    </section>
+
+    <!-- Mini Project 6: BMI Calculator -->
+    <section class="project">
+        <h2>6. BMI Calculator (Body Mass Index)</h2>
+    </section>
+
+    <script>
+        // Mini Project 1: Voting Eligibility System
+        // A government website checks if a user is eligible to vote based on age and citizenship
+
+        // User's country and age stored in variables
+        var citizen = "India";
+        var age = 20;
+
+        // Check both conditions: age >= 18 AND citizen === "India"
+        if (age >= 18 && citizen === "India") {
+            console.log("Eligible to Vote");
+        } else {
+            console.log("Not Eligible to Vote");
+        }
+
+        // Mini Project 2: Temperature Converter (Weather App)
+        // A weather app converts temperature from Celsius to Fahrenheit
+
+        // Store the temperature in Celsius in a variable
+        var celsius = 25;
+
+        // Use the conversion formula
+        var fahrenheit = (celsius * 9/5) + 32;
+
+        // Display the result in the console
+        console.log("Temperature in Celsius: " + celsius);
+        console.log("Temperature in Fahrenheit: " + fahrenheit);
+
+        // Mini Project 3: Discount Calculator (E-Commerce Website)
+        // An e-commerce website calculates the final price after applying a discount
+
+        // Store original price and discount percentage in variables
+        var originalPrice = 1000;
+        var discountPercentage = 20;
+
+        // Calculate discount amount
+        var discountAmount = (originalPrice * discountPercentage) / 100;
+
+        // Calculate final price after discount
+        var finalPrice = originalPrice - discountAmount;
+
+        // Display the result in the console
+        console.log("Original Price: " + originalPrice);
+        console.log("Discount: " + discountPercentage + "%");
+        console.log("Discount Amount: " + discountAmount);
+        console.log("Final Price: " + finalPrice);
+
+        // Mini Project 4: Age Verification System (Signup Page)
+        // A website checks if a user is 18 or older before allowing them to sign up
+
+        // User's age stored in a variable
+        var userAge = 21;
+
+        // Check if user is 18 or older using comparison operator (>=)
+        if (userAge >= 18) {
+            console.log("Access Granted");
+        } else {
+            console.log("Access Denied");
+        }
+
+        // Mini Project 5: Bill Splitter with Tip Calculator
+        // Split a restaurant bill among friends with tip included
+
+        // Input: Total bill, number of people, tip percentage
+        var totalBill = 1500;
+        var numberOfPeople = 5;
+        var tipPercentage = 10;
+
+        // Calculate tip amount
+        var tipAmount = (totalBill * tipPercentage) / 100;
+
+        // Calculate total bill with tip
+        var totalBillWithTip = totalBill + tipAmount;
+
+        // Calculate each person's share
+        var eachPersonShare = totalBillWithTip / numberOfPeople;
+
+        // Display the result in the console
+        console.log("Total Bill: " + totalBill);
+        console.log("Tip Percentage: " + tipPercentage + "%");
+        console.log("Tip Amount: " + tipAmount);
+        console.log("Total Bill with Tip: " + totalBillWithTip);
+        console.log("Each Person's Share: " + eachPersonShare);
+
+        // Mini Project 6: BMI Calculator (Body Mass Index)
+        // Calculate and categorize BMI
+
+        // Input: Weight (kg), height (meters)
+        var weight = 70;
+        var height = 1.75;
+
+        // Calculate BMI using formula: BMI = weight / (height * height)
+        var bmi = weight / (height * height);
+
+        // Determine BMI category
+        var category;
+        if (bmi < 18.5) {
+            category = "Underweight";
+        } else if (bmi >= 18.5 && bmi <= 24.9) {
+            category = "Normal";
+        } else if (bmi >= 25 && bmi <= 29.9) {
+            category = "Overweight";
+        } else {
+            category = "Obese";
+        }
+
+        // Display the result in the console
+        console.log("Weight: " + weight + " kg");
+        console.log("Height: " + height + " m");
+        console.log("BMI: " + bmi);
+        console.log("Category: " + category);
+    </script>
+</body>
+</html>
